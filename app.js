@@ -1,4 +1,5 @@
 const { Client } = require("discord.js");
+const dotenv = require("dotenv").config();
 const bot = new Client();
 
 bot.on("ready", () => {
@@ -17,4 +18,4 @@ bot.on("message", (msg) => {
     msg.reply(`Te mide ${size} ${text}`);
   }
 });
-bot.login("NzM5MTQwMjYxMjY2ODQ5ODUy.XyWIAg.iU7jpkz23-2Tafw0bdzOeiWBMrk");
+bot.login(process.env.BOT);
