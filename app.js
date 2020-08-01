@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const express = require("express").listen(process.env.PORT);
+const express = require("express")().listen(process.env.PORT);
 const dotenv = require("dotenv").config();
 const bot = new Discord.Client();
 
