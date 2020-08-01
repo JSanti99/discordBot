@@ -1,6 +1,6 @@
-const { Client } = require("discord.js");
+const Discord = require("discord.js");
 const dotenv = require("dotenv").config();
-const bot = new Client();
+const bot = new Discord.Client();
 
 bot.on("ready", () => {
   console.log("Bot is ready");
